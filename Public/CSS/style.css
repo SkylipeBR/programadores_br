@@ -1,10 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Michroma&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root
+{
+    --branco: #fff;
+    --preto: #000;
+    --text-gray-light: #b1afb9;
+    --text-gray: #6d7278;
+    --text-dark: #0e1c34;
+    --grad-blue: linear-gradient(225deg,rgb(30,79,108) 0%,rgb(14,28,52) 100%);
+    --grad-orange: linear-gradient(225deg,#FFAF00 0%,#FE4D1B 48.15%,#E70154 100%);
+    --grad-blue-light: linear-gradient(29.83deg,#1F95FD 0%,#4FE8E4 100%);
+    --box-shadow-orange: 0 18px 40px 0 rgba(252,71,31,0.3);
+    --box-shadow-orange-dark: 0 20px 60px 10px rgba(252,71,31,0.6);
+    --box-shadow-blue: 0 18px 40px 0 rgba(79,232,228,0.5);
+    --box-shadow-card: 10px 10px 25px 1px #a3a3a3;
+    --border-radius: 8px;
+
 }
 
 body
@@ -25,7 +44,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .cabecalho .nav-list .nav-item
@@ -38,12 +57,41 @@ body
 
     color: #A2AFB9;
     text-decoration: none;
+    width: 100%;
+}
+
+.cabecalho .nav-list .btn-mk-menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    min-height: 40px;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--preto);
+    background: var(--grad-blue-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cabecalho .nav-list .btn-mk-menu:hover
+{
+    box-shadow: var(--box-shadow-blue);
+    animation: btn 1.2s linear infinite;
+    animation-direction: reverse;
 }
 
 .main-container
 {
-    background: linear-gradient(to right bottom, #15304A, #183B56);
-    height: 100vh;
+    background: var(--grad-blue);
+    height: 100%;
+    padding: 0px 0px 100px;
 }
 
 .main-container .sec-content
@@ -51,4 +99,254 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.main-container .sec-content .sec-content-texto #titulo-banner
+{
+    color: var(--branco);
+    font-size: 4.5em;
+    line-height: 1.1em;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .sec-content .sec-content-texto #paragrafo-banner
+{
+    margin: 20px 0px;
+    width: 550px;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: var(--text-gray-light);
+}
+
+.main-container .sec-content .sec-content-texto .btn-view
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    margin: 20px 0px;
+    padding: 18px 20px;
+    min-height: 64px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--branco);
+    background: var(--grad-orange);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-container .sec-content .sec-content-texto .btn-view:hover,
+.comentarios   .btn-view:hover
+
+{
+    box-shadow: var(--box-shadow-orange-dark);
+    /* transform: scale(1.3); */
+    animation: btn 1.5s linear infinite;
+    animation-direction: reverse;
+}
+
+.main-container .sec-content .sec-content-texto .btn-view #icon-play
+{
+    font-size: 1.3em;
+}
+
+/* Animation */
+@keyframes btn {
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+
+    100%
+    {
+        animation-direction: reverse;
+    }
+
+}
+
+
+/* Section Market */
+.market
+{
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+}
+
+.market .market-content #titulo-market
+{
+    margin: 50px;
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 2.5em;
+}
+
+
+.market .market-content .boxes-content-market
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 100px 0px;
+}
+
+.market .market-content .boxes-content-market .box-market
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 360px;
+    gap: 50px;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    cursor: pointer;
+}
+
+.market .market-content .boxes-content-market .box-market:hover
+{
+    box-shadow: var(--box-shadow-card);
+    
+}
+
+.market .market-content .boxes-content-market .box-market #add
+{
+    color: #4FE8E4;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.market .market-content .boxes-content-market .box-market-texto h2
+{
+    font-size: 4em;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--text-dark);
+
+}
+
+.market .market-content .boxes-content-market .box-market-texto p
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--text-gray-light);
+
+}
+
+
+/* Comentários ou feedbacks de alunos */
+.comentarios
+{
+    width: 100%;
+    height: 100%;
+    margin: 200px auto;
+}
+
+.comentarios .comentarios-content
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comentarios .comentarios-content #barra-img
+{
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+.comentarios .comentarios-content .comentarios-content-titulo #titulo-comentarios
+{
+    width: 70%;
+    font-size: 4.2em;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.comentarios .boxes-comentarios
+{
+    margin: 50px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.comentarios .boxes-comentarios .box-coments
+{
+    width: 550px;
+    margin: 50px 0px;
+    padding: 24px 30px;
+    border-radius: var(--border-radius);
+    transition: 0.5s;
+}
+
+.comentarios .boxes-comentarios .box-coments:hover
+{
+    box-shadow: var(--box-shadow-card);
+}
+
+.comentarios .boxes-comentarios .box-coments p
+{
+    color: var(--text-gray);
+    font-size: 1.1em;
+    margin: 20px 0px;
+}
+
+.comentarios .boxes-comentarios .box-coments h3
+{
+    color: var(--text-dark);
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.comentarios .boxes-comentarios .box-coments .header-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.comentarios .boxes-comentarios .box-coments .header-box #perfil
+{
+    border-radius: 50%;
+
+}
+
+.comentarios .btn-view
+{
+    width: 50%;
+    margin: 20px auto;
+    padding: 18px 20px;
+    min-height: 64px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--branco);
+    background: var(--grad-orange);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
 }

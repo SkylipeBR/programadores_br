@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <link rel="stylesheet" href="CSS/style.css">
     <title>Curso Dev Web Full Stack</title>
 </head>
@@ -41,16 +45,91 @@
 
         <section class="sec-content">
             <div class="sec-content-texto">
-                <h1 id="titulo-banner">CURSO DESENVOLVIMENTO WEB FULL STACK</h1>
-                <p>Vá do zero até seus primeiros projetos como programador profissional</p>
-                <button class="btn-view">Assista o vídeo</button>
+                <h1 id="titulo-banner">CURSO <br />DESENVOLVIMENTO <br />WEB FULL STACK</h1>
+                <p id="paragrafo-banner">Vá do zero até seus primeiros projetos como programador profissional</p>
+                <button class="btn-view"><ion-icon name="play" id="icon-play"></ion-icon>Assista o vídeo</button>
             </div>
-            <div>
+            <div class="sec-content-img">
                 <img src="Images/hero-image.png" alt="hero">
             </div>
         </section>
-
-
     </main>
+
+    <!-- market -->
+    <section class="market">
+        <div class="market-content">
+            <h1 id="titulo-market">TUDO O QUE VOCÊ PRECISA EM UM SÓ LUGAR</h1>
+            <div class="boxes-content-market">
+                <div class="box-market">
+                    <ion-icon name="add" id="add"></ion-icon>
+                    <div class="box-market-texto">
+                        <h2>2000</h2>
+                        <p>ALUNOS</p>
+                    </div>
+                </div>
+                <div class="box-market">
+                    <ion-icon name="add" id="add"></ion-icon>
+                    <div class="box-market-texto">
+                        <h2>50</h2>
+                        <p>AULAS</p>
+                    </div>
+                </div>
+                <div class="box-market">
+                    <div class="box-market-texto">
+                        <h2>10</h2>
+                        <p>TECNOLOGIAS FULL STACK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- commits -->
+    <section class="comentarios">
+        <div class="comentarios-content">
+            <img src="Images/barra.svg" alt="barra colorida" id="barra-img">
+            <div class="comentarios-content-titulo">
+                <h1 id="titulo-comentarios">INSCREVA-SE NO CURSO QUE ESTÁ MUDANDO A VIDA DOS SEUS ALUNOS</h1>
+            </div>
+        </div>
+
+        <div class="boxes-comentarios">
+            <div class="box-coments">
+                <div class="header-box">
+                    <img src="Images/comentarios/Rafael.jpg" alt="Rafael Alves" width="100px" height="100px" id="perfil">
+                    <img src="Images/comentarios/aspas.svg" alt="Aspas">
+                </div>
+                <p>Tive a minha primeira oportunidade de emprego na área, eu não tenho formação acadêmica mas o que eu aprendi aqui eu usei para mostrar ao empregador que eu estaria capacitado</p>
+                <h3>Rafael Alves</h3>
+            </div>
+            <div class="box-coments">
+                <div class="header-box">
+                    <img src="Images/comentarios/janaina.jpg" alt="Janaina Tavares" width="100px" height="100px" id="perfil">
+                    <img src="Images/comentarios/aspas.svg" alt="Aspas">
+                </div>
+                <p>Eu consegui uma vaga de front end. Fiz um teste prático e passei. Obrigada, teus vídeos do Youtube e do curso de desenvolvimento me salvaram.</p>
+                <h3>JANAINA TAVARES</h3>
+            </div>
+            <div class="box-coments">
+                <div class="header-box">
+                    <img src="Images/comentarios/Antonio.jfif" alt="Antionio Silva Cruz" width="100px" height="100px" id="perfil">
+                    <img src="Images/comentarios/aspas.svg" alt="Aspas">
+                </div>
+                <p>Já tenho meu primeiro cliente e já apresentei um protótipo a ele, o mesmo ficou satisfeito com o esboço promissor da aplicação que eu apresentei.</p>
+                <h3>Antionio Silva Cruz</h3>
+            </div>
+            <div class="box-coments">
+                <div class="header-box">
+                    <img src="Images/comentarios/Ricardo.jfif" alt="Ricardo Sobral" width="100px" height="100px" id="perfil">
+                    <img src="Images/comentarios/aspas.svg" alt="Aspas">
+                </div>
+                <p>Custo e suporte excelente, falo diretamente com o igor nas redes sociais. Devido ao excelente suporte, o curso também me rendeu um estágio.</p>
+                <h3>Ricardo Sobral Alves Da Cunha</h3>
+            </div>
+            <button class="btn-view">Inscreva-se Agora mesmo</button>
+        </div>
+    </section>
+
 </body>
 </html>

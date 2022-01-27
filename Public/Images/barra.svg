@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="240px" viewBox="0 0 188 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>C713B0B7-D3EB-48FA-A6F9-E2F4E6A9A3D1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="5.38048037e-05%" y1="49.9999289%" x2="99.9978225%" y2="49.9999289%" id="linearGradient-1">
+            <stop stop-color="#FF2A00" offset="0%"></stop>
+            <stop stop-color="#FFB600" offset="100%"></stop>
+        </linearGradient>
+        <path d="M191.85088,75 C191.193224,75 190.600811,75.4010967 190.352885,76.0132968 L140.125843,196.738554 C140.042332,196.939102 140.003185,197.144928 140,197.345476 L140,197.356031 C139.995356,198.221556 140.689549,199 141.621229,199 L168.149695,199 C168.807351,199 169.397154,198.598903 169.64769,197.986703 L219.877342,77.2614462 C219.955634,77.0635367 219.994781,76.8656272 220,76.6703564 L220,76.6017478 C219.979122,75.7520562 219.295368,75 218.379347,75 L191.85088,75 Z" id="path-2"></path>
+        <filter x="-101.3%" y="-65.3%" width="347.5%" height="259.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="18" dy="18" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="30" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.980392157   0 0 0 0 0.392156863   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.968627451   0 0 0 0 0.709803922   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---ProgBr---Sales-Page---v5.0---1440px" transform="translate(-104.000000, -9550.000000)">
+            <g id="Group-4" transform="translate(0.000000, 9515.000000)">
+                <g id="Slash">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
