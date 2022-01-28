@@ -440,7 +440,7 @@ body
 {
     display: flex;
     align-items: center;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .conteudo .chaves-titulo #titulo-back-end,
